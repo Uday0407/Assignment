@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /*background-image: url(https://www.shutterstock.com/image-vector/location-pin-showing-on-street-260nw-1132486757.jpg);*/
+    background-size: cover;
+    color: #fefefe;
+    background-image: url(background2.png);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #149dc7;
+    color: #f3efee;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(background2.png);
+    background-size: cover;
+}
+
+
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#locationlink {
+    display: inline;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#locationButton {
+    margin-top: 20px;
+    background-color: #36b1f4;
+}
+
+#presenceButton {
+    background-color: #f44336;
+}
+
+#submitbutton {
+    background-color: #f44336;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#yesButton {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+#noButton {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f44336;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#heading {
+    text-align: center;
+    font-family:  'Honk', system-ui;
+    font-size: 50px;
+
+}

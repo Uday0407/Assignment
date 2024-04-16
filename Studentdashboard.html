@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prof-Check Student Dashboard</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+        }
+
+        #dashboard {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            height: 300vh;
+            /*background-color: #12b84ac8;*/
+            background-image: url(background2.png);
+
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #000000;
+            color: #d2cfce;
+        }
+
+        .lecturer {
+            text-align: center;
+            margin: 30px;
+            border: 5px solid rgb(245, 245, 245);
+            padding: 5px;
+            border-radius: 10px;
+            max-width: 1500px;
+            color: rgb(247, 246, 246);
+        }
+
+        .lecturer img {
+            max-width: 100px;
+            border-radius: 20%;
+            margin-bottom: 10px;
+        }
+
+        .track {
+            background-color: rgb(68, 22, 219);
+        }
+
+        a {
+            color: rgb(228, 20, 20);
+            text-decoration: none;
+        }
+
+        .track-lecturer {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+
+        .track-lecturer:hover {
+            background-color: #3e8e41;
+        }
+
+        .lecturer-profile {
+            background-color: #f2f2f2;
+            color: #e60707;
+            border: 2px solid #ccc;
+        }
+
+        .lecturer-profile:hover {
+            background-color: #e2e2e2;
+        }
+
+        #welcome {
+            color: #000000;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="dashboard">
+        <div id="header">
+            <h1>Student Dashboard</h1>
+            <div id="menu">
+                <button id="logoutButton">Logout</button>
+            </div>
+        </div>
+        <h1 id="welcome">WELCOME 22CS3024!!!</h1>
+        <div class="lecturers">
+            <div class="lecturer" id="Gargi">
+                <img src="https://www.rgipt.ac.in/faculty/Content/FacultyImage/202106241624365756.jpg" alt="Lecturer 1">
+                <h2>Dr.Gargi Srivastava</h2>
+                <p>Cabin.No : XYZ, Admin Block </p>
+                <p>Present in Cabin : NO</p>
+                <button class="track-lecturer"><a href="https://maps.app.goo.gl/sVFGfroSzCSfFxf69">Track
+                        Location</a></button>
+                <a href="https://www.rgipt.ac.in/faculty/Faculty/FacultyProfile?Sid=Y4x%2Ff%2FqeuO4%3D"
+                    class="lecturer-profile">View Profile</a>
+            </div>
+            <div class="lecturer" id="sushambiswas">
+                <img src="https://www.rgipt.ac.in/faculty/Content/FacultyImage/201912191008359362.jpg" alt="Lecturer 2">
+                <h2>Dr.Susham Biswas</h2>
+                <p>Cabin.No : XYZ, Admin Block</p>
+                <p>Present in Cabin : YES</p>
+                <button class="track-lecturer"><a href="https://maps.app.goo.gl/UYoPbpY851kURENNA">Track
+                    Location</a></button>
+            <a href="https://www.rgipt.ac.in/faculty/Faculty/FacultyProfile?Sid=84kxLRbFL6I%3D"
+                class="lecturer-profile">View Profile</a>
+            </div>
+            <div class="lecturer" id="akashyadav">
+                <img src="https://www.rgipt.ac.in/faculty/Content/FacultyImage/202304271432414944.jpg" alt="Lecturer 3">
+                <h2>Dr.Akash Yadav</h2>
+                <p>Cabin.No : XYZ, Admin Block</p>
+                <p>Present in Cabin : YES</p>
+                <button class="track-lecturer"><a href="https://maps.app.goo.gl/8GA9gC935B6JCNok9">Track
+                    Location</a></button>
+            <a href="https://www.rgipt.ac.in/faculty/Faculty/FacultyProfile?Sid=ffy%2BvaT2fj0%3D"
+                class="lecturer-profile">View Profile</a>
+            </div>
+            <div class="lecturer" id="kalkadubey">
+                <img src="https://www.rgipt.ac.in/faculty/Content/FacultyImage/202310181025588865.jpg" alt="Lecturer 4">
+                <h2>Dr.Santosh Kumar Mishra</h2>
+                <p>Cabin.No : XYZ, Admin Block</p>
+                <p>Present in Cabin : NO</p>
+                <button class="track-lecturer"><a href="https://maps.app.goo.gl/8GA9gC935B6JCNok9">Track
+                    Location</a></button>
+            <a href="https://www.rgipt.ac.in/faculty/Faculty/FacultyProfile?Sid=ffy%2BvaT2fj0%3D"
+                class="lecturer-profile">View Profile</a>
+            </div>
+        </div>
+
+        <script src="s_dashboard_script.js"></script>
+
+</body>
+
+</html>

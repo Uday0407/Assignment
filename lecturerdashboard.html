@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lecturer Dashboard</title>
+  <link rel="stylesheet" href="l_dashboard.css">
+</head>
+
+<body>
+
+  <div id="dashboard">
+    <div id="header">
+      <h1>Lecturer Dashboard</h1>
+        <button id="logoutButton">Logout</button>
+    </div>
+    <h1 id="heading">WELCOME TO PROFCHECK!!!</h1>
+
+    <div id="content" class="card">
+     <div id="buttons">
+        <button id="presenceButton">Are you present in the cabin?</button>
+        <button id="locationButton">Share Live Location</button>
+      </div>
+      <div>
+        <label for="locationlink">Live Location Link :</label>
+        <input type="text" id="locationlink" placeholder="Paste the link here!!!">
+        <button type="submit" id="submitbutton">submit</button>
+      </div>
+
+      <h4>Steps to copy the live location link!!!</h4>
+      <h5>Note - Can be done using mobile phone only</h5>
+      <ul>
+        <li>click on "Share live location" button above </li>
+        <li>Click on "New Share"</li>
+        <li>Set the timer for 12 hours</li>
+        <li>Check for the copy link option below</li>
+      </ul>
+    </div>
+
+
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+      <p>Are you present in the cabin?</p>
+      <button id="yesButton">Yes</button>
+      <button id="noButton">No</button>
+    </div>
+
+    <script src="l_dashboard_script.js"></script>
+  </div>
+
+</body>
+
+</html>
